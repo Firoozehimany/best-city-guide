@@ -31,15 +31,36 @@ a {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     width: 100%;
     height: auto;
+    padding: 32px 0;
 }
 
 .header .logo {
     float: left;
+    color: #093a58;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .header .main-menu {
     float: right;
+    padding-top: 5px;
 }
+
 .header .main-menu ul li {
     display: inline-block;
+    padding: 0 24px;
+    font-size: 16px;
 }
+
+.header .main-menu ul li a {
+    color: #3acec2;
+    text-transform: uppercase;
+}
+
+.header .main-menu ul li a:hover {
+    color: #093a58;
+}
+
+
