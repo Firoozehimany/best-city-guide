@@ -1,0 +1,45 @@
+body {
+    direction: ltr;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1088px;
+    display: block;
+    margin: 0 auto;
+}
+
+.clearfix:after , .clearfix:before {
+    clear: both;
+    display: table;
+    content: ""
+}
+
+.header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: auto;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .main-menu {
+    float: right;
+}
+.header .main-menu ul li {
+    display: inline-block;
+}
