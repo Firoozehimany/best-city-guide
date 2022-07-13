@@ -1,3 +1,7 @@
+html {
+font-size: 16px;
+}
+
 body {
     direction: ltr;
     margin: 0;
@@ -27,9 +31,10 @@ a {
 }
 
 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 26px;
     margin: 0;
+    color: #3a3a3a;
 }
 .header {
     position: fixed;
@@ -37,15 +42,15 @@ p {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     width: 100%;
     height: auto;
-    padding: 32px 0;
+    padding: 34px 0;
+    z-index: 90;
 }
 
 .header .logo {
     float: left;
     color: #093a58;
-    font-size: 24px;
+    font-size: 1.25rem;
     text-transform: capitalize;
-    font-weight: 600;
     cursor: pointer;
 }
 
@@ -57,7 +62,7 @@ p {
 .header .main-menu ul li {
     display: inline-block;
     padding: 0 24px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .header .main-menu ul li a {
@@ -73,8 +78,9 @@ p {
     text-align: center;
     background: #3acec2;
     max-width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 60px;
     color: #fff;
+    margin-bottom: 60px;
 }
 
 .banner .logo {
@@ -84,16 +90,35 @@ p {
     padding-top: 100px;
 }
 
+.banner h1 {
+    font-size: 2.15rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 40px 0 10px;
+}
+
+.banner h3 {
+    font-size: 1.45rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 .columns .col {
     float: left;
 }
 
+.columns .col h2 {
+    color: #093a58;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 .columns .col.first , .columns .col.third{
-    width: 30%;
+    max-width: 30%;
 }
 
 .columns .col.second {
-    width: 40%;
+    max-width: 40%;
 }
 
 .columns .col .holder {
@@ -101,11 +126,12 @@ p {
 }
 
 .columns .col .image-box img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .columns .col .image-box {
     position: relative;
+    margin-bottom: 16px;
 }
 
 .columns .col .image-box .content {
@@ -114,12 +140,31 @@ p {
     bottom: 0;
     background:rgba(19, 43, 102, .85);
     padding: 5px 10px;
-    color: #fff;
 }
+
+.columns .col .content h5 {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.columns .col .content p {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 16px;
+    padding: 0 5px;
+}   
+
 .footer  p {
     text-align: center;
     background: #d9e4ea;
     padding: 32px;
+    margin-top: 80px;
+    font-size: 1rem;
+    color: #3a3a3a;
+    font-weight: 400;
+    text-transform: capitalize;
 }
-
-
