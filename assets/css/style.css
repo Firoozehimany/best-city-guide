@@ -1,3 +1,6 @@
+@import url(fontawesome.css);
+@import url(solid.css);
+
 html {
 font-size: 16px;
 }
@@ -33,9 +36,11 @@ a {
 p {
     font-size: 1rem;
     line-height: 26px;
-    margin: 0;
+    margin: 0 0 16px;
     color: #3a3a3a;
+    font-weight: 300;
 }
+
 .header {
     position: fixed;
     background: #fff;
@@ -56,7 +61,16 @@ p {
 
 .header .main-menu {
     float: right;
-    padding-top: 5px;
+}
+
+.header .main-menu .menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: #093a58;
+}
+
+.header .main-menu .menu-icon {
+    display: none;
 }
 
 .header .main-menu ul li {
@@ -110,7 +124,7 @@ p {
 .columns .col h2 {
     color: #093a58;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .columns .col.first , .columns .col.third{
@@ -146,25 +160,59 @@ p {
     text-align: center;
     color: #fff;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 10px 0;
 }
 .columns .col .content p {
     color: #fff;
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 16px;
-    margin-bottom: 16px;
     padding: 0 5px;
-}   
+}  
+
+.columns .col span {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
 
 .footer  p {
     text-align: center;
     background: #d9e4ea;
     padding: 32px;
-    margin-top: 80px;
+    margin: 80px 0 0;
     font-size: 1rem;
     color: #3a3a3a;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: capitalize;
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .columns .col.first , .columns .col.second , .columns .col.third{
+        max-width: 50%;
+    } 
+}
+
+@media screen and (max-width:760px) {
+
+    .columns .col.first , .columns .col.second , .columns .col.third{
+        max-width: 100%;
+    } 
+
+    .banner h3 {
+        font-size: 1rem;
+    }
+
+    .header .main-menu ul {
+        display: none;
+    }
+
+    .header .main-menu .menu-icon {
+        display: block;
+    }
+
 }
