@@ -1,6 +1,7 @@
 body {
     direction: ltr;
     margin: 0;
+    font-family: 'Varela', sans-serif;
 }
 
 ul {
@@ -25,6 +26,11 @@ a {
     content: ""
 }
 
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
 .header {
     position: fixed;
     background: #fff;
@@ -61,6 +67,59 @@ a {
 
 .header .main-menu ul li a:hover {
     color: #093a58;
+}
+
+.banner {
+    text-align: center;
+    background: #3acec2;
+    max-width: 100%;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.banner .logo {
+    width: 190px;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.columns .col {
+    float: left;
+}
+
+.columns .col.first , .columns .col.third{
+    width: 30%;
+}
+
+.columns .col.second {
+    width: 40%;
+}
+
+.columns .col .holder {
+    margin: 0 16px;
+}
+
+.columns .col .image-box img {
+    width: 100%;
+}
+
+.columns .col .image-box {
+    position: relative;
+}
+
+.columns .col .image-box .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background:rgba(19, 43, 102, .85);
+    padding: 5px 10px;
+    color: #fff;
+}
+.footer  p {
+    text-align: center;
+    background: #d9e4ea;
+    padding: 32px;
 }
 
 
